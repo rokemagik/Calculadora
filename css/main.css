@@ -9,10 +9,15 @@ html, body {
   touch-action: pan-y;
   position: relative;
   background-color: #afa799;
-  height: 50rem;
+  height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  html, body {
+    height: 50rem;
+  }
 }
 
 * {
@@ -32,13 +37,14 @@ main section {
   padding: 0.7rem;
   background-color: #cabea2;
   border-radius: 5px;
+  border: 2px solid #ada190;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 main section .div-1 {
   padding: 3rem;
   background-color: #ffffff;
   border-radius: 3px;
-  border: 3px solid #ada190;
+  border: 2px solid #ada190;
 }
 main section .div-2 {
   margin: 0.7rem 0 0 0;

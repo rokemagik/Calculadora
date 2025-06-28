@@ -1,4 +1,5 @@
 @use '../utilidades/variables' as v;
+@use '../utilidades/mixins' as m;
 
 html, body {
     width: 100%;
@@ -8,10 +9,14 @@ html, body {
     touch-action: pan-y; 
     position: relative;
     background-color: v.$espejismo-vigoroso-oscuro;
-    height: 50rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include m.tablet {
+        height: 50rem;
+    }
 }
 
 * {
