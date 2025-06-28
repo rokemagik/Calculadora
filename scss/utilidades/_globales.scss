@@ -1,0 +1,22 @@
+@use '../utilidades/variables' as v;
+
+html, body {
+    width: 100%;
+    overflow-x: hidden !important; 
+    margin: 0;
+    padding: 0;
+    touch-action: pan-y; 
+    position: relative;
+    background-color: v.$espejismo-vigoroso-oscuro;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%; 
+    margin: 0;
+    padding: 0;
+}
